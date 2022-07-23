@@ -1,5 +1,13 @@
 .container {
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  min-height: 100vh;
+  padding: 2rem;
+  gap: 1rem;
+
 }
 
 .main {
@@ -116,13 +124,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }

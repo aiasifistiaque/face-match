@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.images {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.images img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid dodgerblue;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected {
+  margin: 1rem 0;
+}
+.selected img {
+  width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 2px solid #424242;
+  border-radius: 4px;
+}
+
+.details {
+  background-color: whitesmoke;
+  padding: 1rem;
+}/*# sourceMappingURL=Styles.module.css.map */
